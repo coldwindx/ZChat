@@ -17,6 +17,10 @@ public:
 
 private:
     Ui::RegisterDialog *ui;
+
+    void showTip(QString str);
+public slots:
+    void sendVerificationCode();
 };
 
 #endif // REGISTERDIALOG_H

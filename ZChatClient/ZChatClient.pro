@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,15 +28,20 @@ DESTDIR = ./bin
 CONFIG += c++11
 
 SOURCES += \
+    global.cpp \
+    httpmanager.cpp \
         main.cpp \
         mainwindow.cpp \
     logindialog.cpp \
     registerdialog.cpp
 
 HEADERS += \
+    global.h \
+    httpmanager.h \
         mainwindow.h \
     logindialog.h \
-    registerdialog.h
+    registerdialog.h \
+    singleton.h
 
 FORMS += \
         mainwindow.ui \
